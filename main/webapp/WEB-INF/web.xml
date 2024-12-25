@@ -11,9 +11,20 @@
 		<servlet-name>woeif</servlet-name>
 		<servlet-class>erig.woeif</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>test</display-name>
+		<servlet-name>test</servlet-name>
+		<servlet-class>test.test</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>woeif</servlet-name>
 		<url-pattern>/woeif</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/test</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
