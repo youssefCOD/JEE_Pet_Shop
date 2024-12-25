@@ -55,6 +55,7 @@ p.more_details {
 .logo {
 	padding: 30px 0 0 20px;
 }
+
 /*-----------------------------menu-------------------*/
 #menu {
 	width: 628px;
@@ -107,6 +108,7 @@ p.more_details {
 #menu ul li a:hover {
 	color: #c4dfa6;
 }
+
 /*----------------crumb_nav------------------*/
 .crumb_nav {
 	padding: 5px 0 10px 0px;
@@ -358,6 +360,7 @@ ul.demolayout a.active {
 	clear: left;
 	padding: 0px;
 }
+
 /*-----------------------languages_box---------*/
 .languages_box {
 	padding: 0 0 5px 0;
@@ -397,6 +400,7 @@ ul.demolayout a.active {
 .currency a:hover {
 	border: 1px #990000 solid;
 }
+
 /*------------------------cart---------------------*/
 .cart {
 	width: 337px;
@@ -420,6 +424,7 @@ a.view_cart {
 	margin: 12px 0 0 10px;
 	color: #990000;
 }
+
 /*---------------contact_form------------------*/
 .contact_form {
 	width: 355px;
@@ -536,6 +541,7 @@ a.continue {
 	font-size: 11px;
 	line-height: 20px;
 }
+
 /*--------------cart_table-------------*/
 .cart_table {
 	width: 440px;
@@ -560,6 +566,7 @@ img.cart_thumb {
 	border: 1px #b2b2b2 solid;
 	padding: 2px;
 }
+
 /*--------------*/
 div.pagination {
 	width: 420px;
@@ -579,7 +586,8 @@ div.pagination a {
 	color: #795636;
 }
 
-div.pagination a:hover, div.pagination a:active {
+div.pagination a:hover,
+div.pagination a:active {
 	border: 1px solid #795636;
 	color: #fff;
 	background-color: #795636;
@@ -600,6 +608,7 @@ div.pagination span.disabled {
 	border: 1px solid #f3f3f3;
 	color: #ccc;
 }
+
 /*---------------footer------------------------*/
 .footer {
 	height: 100px;
