@@ -12,7 +12,7 @@ public class Client implements Serializable {
 	private String societe;
 	private String addresse;
 
-	
+
 	public Client( String username, String password, String email, String phone, String company,
 			String adrres) {
 		super();
@@ -84,7 +84,7 @@ public class Client implements Serializable {
 	public void setAddresse(String adrres) {
 		addresse = adrres;
 	}
-    
-	
-	
+
+
+
 }

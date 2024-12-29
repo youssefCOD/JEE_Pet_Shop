@@ -10,7 +10,7 @@ import models.Purchase;
 
 public class PurchaseDao {
   public List < Purchase > getPurchases() {
-    List < Purchase > purchases = new ArrayList < Purchase > ();
+    List < Purchase > purchases = new ArrayList < > ();
 
     Connection connection = SingletonConnection.getConnection();
     try {

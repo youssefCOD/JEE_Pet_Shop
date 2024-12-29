@@ -6,13 +6,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
 import models.Categorie;
 
 public class CategorieDao {
 
   public List<Categorie> getCategories() {
 
-    List<Categorie> categories = new ArrayList<Categorie>();
+    List<Categorie> categories = new ArrayList<>();
 
     Connection connection = SingletonConnection.getConnection();
     try {

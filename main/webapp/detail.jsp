@@ -175,6 +175,7 @@
 <!--end of center content-->
 
 <%@include file="footer.jsp"%>
+</body>
 <script type="text/javascript">
     var tabber1 = new Yetii({
         id: "demo",

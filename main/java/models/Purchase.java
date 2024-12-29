@@ -5,7 +5,7 @@ public class Purchase {
 	private int purchase_id;
 	private int client_id;
 	private int article_id;
-	
+
 	public int getPurchase_id() {
 		return purchase_id;
 	}
@@ -35,5 +35,5 @@ public class Purchase {
 		this.article_id = pet_id;
 	}
 
-	
+
 }

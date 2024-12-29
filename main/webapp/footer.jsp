@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+
 <div class="footer">
 	<div class="left_footer">
 		<img src="images/footer_logo.gif" alt="" title="" /><br /> <a
@@ -13,6 +12,3 @@
 	</div>
 </div>
 
-</div>
-
-</body>

@@ -8,11 +8,11 @@ public class Article {
 	private String status;
 	private double prix;
 	private String nom;
-	
+
 	public Article(String pet_name, String pet_description, int pet_category_id, String pet_images, String pet_status,
 			double price) {
 		super();
-		
+
 		this.description = pet_description;
 		this.categorie_id = pet_category_id;
 		this.photo = pet_images;
@@ -66,5 +66,5 @@ public class Article {
 	public void setPrix(double price) {
 		this.prix = price;
 	}
-	
+
 }

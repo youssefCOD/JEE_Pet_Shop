@@ -113,4 +113,5 @@
 <!--end of center content-->
 
 <%@include file="footer.jsp"%>
+</body>
 </html>
