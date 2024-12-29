@@ -49,7 +49,7 @@ p.more_details {
 .header {
 	width: 900px;
 	height: 181px;
-	background: url(header.jpg) no-repeat center;
+	background: url(../images/header.jpg) no-repeat center;
 }
 
 .logo {
@@ -182,7 +182,7 @@ a.more {
 .about {
 	width: 337px;
 	clear: both;
-	background: url(images/border.gif) no-repeat bottom center;
+	background: url(../images/border.gif) no-repeat bottom center;
 	padding: 0 0 35px 0;
 }
 
@@ -227,19 +227,19 @@ img.right {
 .box_top {
 	width: 295px;
 	height: 9px;
-	background: url(images/box_top.gif) no-repeat center bottom;
+	background: url(../images/box_top.gif) no-repeat center bottom;
 }
 
 .box_center {
 	width: 295px;
 	height: auto;
-	background: url(images/box_center.gif) repeat-y center;
+	background: url(../images/box_center.gif) repeat-y center;
 }
 
 .box_bottom {
 	width: 295px;
 	height: 9px;
-	background: url(images/box_bottom.gif) no-repeat center top;
+	background: url(../images/box_bottom.gif) no-repeat center top;
 }
 
 .new_prod_box {
@@ -259,7 +259,7 @@ img.right {
 	width: 132px;
 	height: 119px;
 	text-align: center;
-	background: url(images/new_prod_box.gif) no-repeat center;
+	background: url(../images/new_prod_box.gif) no-repeat center;
 	position: relative;
 }
 
@@ -302,7 +302,7 @@ ul.list li a {
 	list-style: none;
 	text-decoration: none;
 	color: #000000;
-	background: url(images/left_menu_bullet.gif) no-repeat left;
+	background: url(../images/left_menu_bullet.gif) no-repeat left;
 	padding: 0 0 0 17px;
 }
 
@@ -407,7 +407,7 @@ ul.demolayout a.active {
 	float: left;
 	height: 40px;
 	margin: 10px 0 10px 0;
-	background: url(images/border.gif) no-repeat bottom center;
+	background: url(../images/border.gif) no-repeat bottom center;
 	padding: 0 0 30px 0;
 }
 
@@ -482,7 +482,7 @@ input.register {
 	text-align: center;
 	float: right;
 	color: #FFFFFF;
-	background: url(images/register_bt.gif) no-repeat center;
+	background: url(../images/register_bt.gif) no-repeat center;
 }
 
 a.contact {
@@ -491,7 +491,7 @@ a.contact {
 	display: block;
 	float: right;
 	margin: 0 0 0 10px;
-	background: url(contact_bt.gif) no-repeat center;
+	background: url(../images/contact_bt.gif) no-repeat center;
 	text-decoration: none;
 	text-align: center;
 	line-height: 24px;
@@ -504,7 +504,7 @@ a.checkout {
 	display: block;
 	float: right;
 	margin: 10px 30px 0 10px;
-	background: url(images/register_bt.gif) no-repeat center;
+	background: url(../images/register_bt.gif) no-repeat center;
 	text-decoration: none;
 	text-align: center;
 	line-height: 25px;
@@ -517,7 +517,7 @@ a.continue {
 	display: block;
 	float: left;
 	margin: 10px 0 0 0px;
-	background: url(images/register_bt.gif) no-repeat center;
+	background: url(../images/register_bt.gif) no-repeat center;
 	text-decoration: none;
 	text-align: center;
 	line-height: 25px;
@@ -612,7 +612,7 @@ div.pagination span.disabled {
 .footer {
 	height: 100px;
 	border-top: 1px #b2b2b2 dashed;
-	background: url(images/footer_bg.gif) no-repeat bottom;
+	background: url(../images/footer_bg.gif) no-repeat bottom;
 }
 
 .left_footer {
