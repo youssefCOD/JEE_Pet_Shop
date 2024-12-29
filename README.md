@@ -34,7 +34,14 @@ Follow these steps to set up and run the Pet Shop application:
 
 4. **Format the Source Code**  
    - Right-click on the **`src`** directory.  
-   - Select **Source** → **Format** in order for eclipse to recognize the new changes.  
+   - Select **Source** → **Format** in order for eclipse to recognize the new changes.
 
-5. **Launch the Application**  
+5. **Set Up the Database**  
+   - Launch MySQL using a management tool like **XAMPP** or **WAMP**.  
+   - Open **phpMyAdmin** and create a new database named **`animal_shop_2024`**.  
+   - Locate the **`main.sql`** file in the project repository.  
+   - Copy its content and paste it into the **SQL** section of the **`animal_shop_2024`** database.  
+   - Execute the SQL script to create the required tables and populate the database.  
+
+6- **Launch the Application**  
    - Run the application in your preferred Java web server (e.g., Tomcat).  
