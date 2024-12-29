@@ -16,7 +16,7 @@ Follow these steps to set up and run the Pet Shop application:
    - Use **Java EE version 2.4** for compatibility.  
 
 2. **Navigate to the Project Directory**  
-   - Right-click on the main project directory.  
+   - Right-click on the src project directory.  
    - Select **Show in Local Terminal** and open it using **Git Bash**.  
 
 3. **Clone the Repository**  
