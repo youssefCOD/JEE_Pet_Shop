@@ -195,7 +195,7 @@ public class Controleur extends HttpServlet {
             String name = metierClient.getUser(id);
             session.setAttribute("userid", id);
             session.setAttribute("username", name);
-            request.getRequestDispatcher("home.jsp").forward(request, response);
+            request.getRequestDispatcher("/index.do").forward(request, response);
         }
     }
 

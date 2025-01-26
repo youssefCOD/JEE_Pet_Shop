@@ -76,6 +76,10 @@
     %>
 </div>
 
+        <div class="clear"></div>
+    </div>
+    <!--end of left content-->
+ 
 <%@include file="rightContent.jsp"%>    <!--end of right content-->
 
     <div class="clear"></div>

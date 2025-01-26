@@ -84,7 +84,7 @@
                     if (categories != null) {
                         for (Categorie p : categories) {
                 %>
-                            <li><a href="#"><%= p.getNom_categorie() %></a></li>
+                            <li><a href="category.do?id=<%= p.getCategorie_id() %>"><%= p.getNom_categorie() %></a></li>
                 <%
                         }
                     }
