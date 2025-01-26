@@ -3,7 +3,7 @@ package dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class SingletonConnection {
+public class Database {
 	private static Connection connection;
 	static {
 		try {

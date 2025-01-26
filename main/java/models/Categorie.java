@@ -5,7 +5,6 @@ public class Categorie {
 	String nom_categorie;
 
 	public Categorie(int pet_category_id, String pet_category_name) {
-		super();
 		this.categorie_id = pet_category_id;
 		this.nom_categorie = pet_category_name;
 	}

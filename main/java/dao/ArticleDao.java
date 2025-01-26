@@ -13,7 +13,7 @@ public class ArticleDao {
   public List<Article> getArticles() {
     List<Article> pets = new ArrayList<>();
 
-    Connection connection = SingletonConnection.getConnection();
+    Connection connection = Database.getConnection();
     try {
       PreparedStatement ps = connection.prepareStatement("SELECT * FROM articles");
       ResultSet rs = ps.executeQuery();

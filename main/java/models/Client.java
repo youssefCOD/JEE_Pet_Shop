@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Client implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private int client_id;
-	private String pseudonom;
+	private String username;
 	private String mot_de_pass;
 	private String email;
 	private String telephone;
@@ -15,8 +15,7 @@ public class Client implements Serializable {
 
 	public Client( String username, String password, String email, String phone, String company,
 			String adrres) {
-		super();
-		this.pseudonom = username;
+		this.username = username;
 		this.mot_de_pass = password;
 		this.email = email;
 		this.telephone = phone;
@@ -38,11 +37,11 @@ public class Client implements Serializable {
 	}
 
 	public String getPseudonom() {
-		return pseudonom;
+		return username;
 	}
 
 	public void setPseudonom(String username) {
-		this.pseudonom = username;
+		this.username = username;
 	}
 
 	public String getMot_de_pass() {

@@ -25,19 +25,26 @@
 					<li><a href="articles.do">articles</a></li>
 					<li><a href="specials.do">special offers</a></li>
 
-					<c:if test="${ empty sessionScope.userid }">
-						<li><a href="myaccount.do">my account</a></li>
-						<li><a href="register.do">register</a></li>
-					</c:if>
+					<%
+                        if (session.getAttribute("userid") == null) {
+                    %>
+                            <li><a href="myaccount.do">my account</a></li>
+                            <li><a href="register.do">register</a></li>
+                    <%
+                        }
+                    %>
 
-					<li><a href="contact.do">contact</a></li>
+                    <li><a href="contact.do">contact</a></li>
 
-					<c:if test="${ !empty sessionScope.userid }">
-						<li><a href="cart.do?userid=${sessionScope.userid }">cart</a></li>
-						<li><a href="logout.do">logout</a></li>
-					</c:if>
+                    <%
+                        if (session.getAttribute("userid") != null) {
+                    %>
+                            <li><a href="cart.do?userid=<%= session.getAttribute("userid") %>">cart</a></li>
+                            <li><a href="logout.do">logout</a></li>
+                    <%
+                        }
+                    %>
 				</ul>
 			</div>
 		</div>
-</body>
-</html>
+

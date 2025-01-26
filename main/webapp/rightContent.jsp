@@ -1,67 +1,7 @@
-<%@include file="header.jsp"%>
 <%@page import="java.util.List" %>
-<%@page import="models.Article" %>
-<%@page import="models.Categorie" %>
-<%@page import="models.Purchase" %>
-
-<div class="center_content">
-    <div class="left_content">
-        <div class="title">
-            <span class="title_icon"><img src="images/bullet1.gif" alt="" title="" /></span>My cart
-        </div>
-
-        <div class="feat_prod_box_details">
-            &gt;&gt; <%= session.getAttribute("username") %> <br />
-            <table class="cart_table">
-                <tr class="cart_title">
-                    <td>Item pic</td>
-                    <td>Product name</td>
-                    <td>Unit price</td>
-                    <td>Qty</td>
-                    <td>Total</td>
-                </tr>
-
-                <%
-                    List<Purchase> purshases = (List<Purchase>) request.getAttribute("purshases");
-                    if (purshases != null) {
-                        for (Purchase  a : purshases) {
-                        	Article p = a.getArticle();
-                %>
-                            <tr>
-                                <td>
-                                    <a href="details.do?id=<%= p.getArticle_id() %>">
-                                        <img src="images/<%= p.getPhoto() %>" alt="" title="" border="0" class="cart_thumb" width="50%" />
-                                    </a>
-                                </td>
-                                <td><%= p.getNom() %></td>
-                                <td><%= p.getPrix() %>$</td>
-                                <td><%= a.getQuantity() %></td>
-                                <td><%= p.getPrix() %>$</td>
-                            </tr>
-                <%
-                        }
-                    }
-                %>
-
-                <tr>
-                    <td colspan="4" class="cart_total"><span class="red">TOTAL SHIPPING:</span></td>
-                    <td><%= request.getAttribute("totalCount") %></td>
-                </tr>
-
-                <tr>
-                    <td colspan="4" class="cart_total"><span class="red">TOTAL:</span></td>
-                    <td><%= request.getAttribute("total") %>$</td>
-                </tr>
-            </table>
-            <a href="#" class="continue">&lt; continue</a>
-            <a href="#" class="checkout">checkout &gt;</a>
-        </div>
-
-        <div class="clear"></div>
-    </div>
-    <!--end of left content-->
-
-    <div class="right_content">
+<%@page import="models.Article" %> <!-- Import the Article model for pet details -->
+<%@page import="models.Categorie" %> 
+<div class="right_content">
         <div class="languages_box">
             <div id="google_translate_element"></div>
 
@@ -112,9 +52,9 @@
                 <span class="title_icon"><img src="images/bullet4.gif" alt="" title="" /></span>Promotions
             </div>
             <%
-                List<Article> modelArticles = (List<Article>) request.getAttribute("modelArticles");
-                if (modelArticles != null) {
-                    for (Article p : modelArticles) {
+                List<Article> articles = (List<Article>) request.getAttribute("modelArticles");
+                if (articles != null) {
+                    for (Article p : articles) {
                         if ("promo".equals(p.getStatus())) {
             %>
                             <div class="new_prod_box">
@@ -140,11 +80,11 @@
 
             <ul class="list">
                 <%
-                    List<Categorie> modelCategories = (List<Categorie>) request.getAttribute("modelCategories");
-                    if (modelCategories != null) {
-                        for (Categorie p : modelCategories) {
+                    List<Categorie> categories = (List<Categorie>) request.getAttribute("modelCategories");
+                    if (categories != null) {
+                        for (Categorie p : categories) {
                 %>
-                            <li><a href="category.do?id=<%= p.getCategorie_id() %>"><%= p.getNom_categorie() %></a></li>
+                            <li><a href="#"><%= p.getNom_categorie() %></a></li>
                 <%
                         }
                     }
@@ -152,12 +92,4 @@
             </ul>
         </div>
     </div>
-	<%@include file="rightContent.jsp"%>    <!--end of right content-->
-
-    <div class="clear"></div>
-</div>
-<!--end of center content-->
-
-<%@include file="footer.jsp"%>
-</body>
-</html>
+    <!--end of right content-->

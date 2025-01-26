@@ -10,7 +10,7 @@ import models.Client;
 public class ClientDao {
 
 	public Client register(Client u) {
-		Connection connection = SingletonConnection.getConnection();
+		Connection connection = Database.getConnection();
 		try {
 			PreparedStatement ps = connection.prepareStatement(
 					"INSERT INTO clients (pseudo, mot_de_passe, email, telephone, societe, adresse) VALUES (?,?,?,?,?,?)");
@@ -36,7 +36,7 @@ public class ClientDao {
 
 	public int login(String user, String pass) {
 		int id = -1;
-		Connection connection = SingletonConnection.getConnection();
+		Connection connection = Database.getConnection();
 		try {
 			PreparedStatement ps = connection.prepareStatement(
 					"SELECT client_id AS MAX_ID FROM clients where pseudo like ? and  mot_de_passe like ?");
@@ -58,7 +58,7 @@ public class ClientDao {
 
 	public String getUser(int id) {
 		String name = "";
-		Connection connection = SingletonConnection.getConnection();
+		Connection connection = Database.getConnection();
 		try {
 			PreparedStatement ps = connection.prepareStatement("SELECT  username FROM clients where client_id = ?");
 			ps.setInt(1, id);

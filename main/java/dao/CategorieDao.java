@@ -15,7 +15,7 @@ public class CategorieDao {
 
     List<Categorie> categories = new ArrayList<>();
 
-    Connection connection = SingletonConnection.getConnection();
+    Connection connection = Database.getConnection();
     try {
       PreparedStatement ps = connection.prepareStatement("SELECT * FROM categories");
       ResultSet rs = ps.executeQuery();

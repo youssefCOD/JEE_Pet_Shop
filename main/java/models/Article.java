@@ -8,11 +8,13 @@ public class Article {
 	private String status;
 	private double prix;
 	private String nom;
-
-	public Article(String pet_name, String pet_description, int pet_category_id, String pet_images, String pet_status,
-			double price) {
+	
+	public Article() {
 		super();
-
+	}
+	public Article(int id, String pet_name, String pet_description, int pet_category_id, String pet_images, String pet_status,
+			double price) {
+		this.article_id = id;
 		this.description = pet_description;
 		this.categorie_id = pet_category_id;
 		this.photo = pet_images;
@@ -20,12 +22,14 @@ public class Article {
 		this.nom = pet_name;
 		this.prix = price;
 	}
+
 	public int getArticle_id() {
 		return article_id;
 	}
 	public String getNom() {
 		return nom;
 	}
+
 	public void setNom(String pet_name) {
 		this.nom = pet_name;
 	}
@@ -43,10 +47,6 @@ public class Article {
 	}
 	public void setCategorie_id(int pet_category_id) {
 		this.categorie_id = pet_category_id;
-	}
-	public Article() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	public String getPhoto() {
 		return photo;
